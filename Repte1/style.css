@@ -1,0 +1,74 @@
+/******************************************************************/
+/*Estilos con flexbox
+/*****************************************************************/
+
+/* Estilos generales para la tarjeta */
+.contenedor {
+    max-width: 300px;
+    width: 90%;
+    margin: 50px auto; /* Centra la tarjeta */
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos para el encabezado (contenedor de la imagen) */
+header {
+    display: flex; /* Hacemos del header un contenedor flex */
+    flex-direction: column; /* Apilamos los elementos verticalmente (imagen, h2, h3) */
+    align-items: center; /* Centra los elementos horizontalmente en el eje transversal */
+    margin-bottom: 20px;
+    
+}
+
+
+#imagen {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 3px solid #ccc;
+}
+
+section{
+    text-align: justify;
+}
+
+h2 {
+    font-size: 1.8rem; /* Tamaño de fuente relativo a la raíz HTML */
+    color: #333;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+section p { /* Estilo para el párrafo dentro de la sección */
+    font-size: 1rem;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    color: #444;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none; /* Quita el borde por defecto del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+    /* Puedes añadir un box-shadow o un ligero cambio de tamaño también */
+}
